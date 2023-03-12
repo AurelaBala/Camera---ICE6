@@ -7,13 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIImagePickerControllerDelegate,
+                      UINavigationControllerDelegate {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var takePictureButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func shootPictureOrVideo(sender: UIButton) {
+    }
+
+    @IBAction func selectExistingPictureOrVideo(sender: UIButton) {
+    } 
 
 }
 
