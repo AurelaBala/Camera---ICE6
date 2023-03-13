@@ -290,6 +290,9 @@
 				DEVELOPMENT_TEAM = D7H83B7QHR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Camera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "My app would like to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "My app would like to use the mic";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "My app would like to look at your pictures";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.Camera;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.Camera-Ice6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,6 +321,9 @@
 				DEVELOPMENT_TEAM = D7H83B7QHR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Camera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "My app would like to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "My app would like to use the mic";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "My app would like to look at your pictures";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.Camera;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.Camera-Ice6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
