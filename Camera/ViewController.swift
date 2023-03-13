@@ -9,6 +9,10 @@ import UIKit
 import AVKit
 import AVFoundation
 import MobileCoreServices
+import UniformTypeIdentifiers
+import Foundation
+
+
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
                       UINavigationControllerDelegate {
@@ -20,10 +24,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     @objc var image: UIImage?
     @objc var movieURL: URL?
     @objc var lastChosenMediaType: String?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (!UIImagePickerController.isSourceTypeAvailable(.camera)) {
+        if !UIImagePickerController.isSourceTypeAvailable(.camera) {
             takePictureButton.isHidden = true
         }
     }
@@ -45,7 +50,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
             if let mediaType = lastChosenMediaType {
                 if mediaType == (kUTTypeImage as NSString) as String {
                     imageView.image = image!
-                    imageView.isHidden = false
+                    //imageView.isHidden = false
                     if avPlayerViewController != nil {
                         avPlayerViewController!.view.isHidden = true
                     }
